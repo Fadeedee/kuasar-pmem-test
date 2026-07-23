@@ -4,7 +4,7 @@ All reported samples are retained. Each cell contains 10 paired rounds.
 
 ## Cell medians
 
-| State | VMs | Transport | Backing | App Ready p50 / p95 (s) | First op p50 (ms) | Held memory p50 (MiB) | CPU to ready p50 (ms) | Host writes p50 (MiB) |
+| State | VMs | Transport | Backing | App Ready p50 / p95 (s) | First op p50 (ms) | Steady-state cgroup memory delta p50 (MiB) | CPU to ready p50 (ms) | Host writes p50 (MiB) |
 |---|---:|---|---|---:|---:|---:|---:|---:|
 | cold | 1 | Lazy PMEM | file | 0.785 / 1.128 | 3.089 | 115.8 | 639.6 | 10.6 |
 | cold | 1 | Lazy PMEM | memfd | 0.509 / 0.716 | 2.914 | 114.4 | 632.3 | 0.2 |
@@ -35,7 +35,7 @@ All reported samples are retained. Each cell contains 10 paired rounds.
 
 Positive values mean memfd is lower; win rate is the fraction of paired rounds in which memfd is lower.
 
-| State | VMs | Transport | App Ready median / wins | Held memory median / wins | Host writes median / wins |
+| State | VMs | Transport | App Ready median / wins | Steady-state cgroup memory delta median / wins | Host writes median / wins |
 |---|---:|---|---:|---:|---:|
 | cold | 1 | Lazy PMEM | +22.4% / 100% | +0.3% / 60% | +98.3% / 100% |
 | cold | 1 | Shared BLK | +22.0% / 100% | +0.6% / 60% | +98.4% / 100% |
@@ -54,7 +54,7 @@ Positive values mean memfd is lower; win rate is the fraction of paired rounds i
 
 Positive values mean Lazy PMEM is lower under the same backing and source state.
 
-| State | VMs | Backing | App Ready median / wins | First op median / wins | Held memory median / wins | Total PSS median / wins |
+| State | VMs | Backing | App Ready median / wins | First op median / wins | Steady-state cgroup memory delta median / wins | Total PSS median / wins |
 |---|---:|---|---:|---:|---:|---:|
 | cold | 1 | file | +2.4% / 60% | -3.3% / 40% | +8.0% / 100% | +0.9% / 60% |
 | cold | 1 | memfd | +17.3% / 70% | +6.8% / 60% | +8.2% / 100% | +1.6% / 60% |
@@ -73,7 +73,7 @@ Positive values mean Lazy PMEM is lower under the same backing and source state.
 
 Mapped RSS counts the same cache pages in every VMM; mapped PSS divides shared pages by the number of mappings. A ratio close to the VM count and one mapping identity indicate cross-VM sharing of one final cache object.
 
-| State | VMs | Backing | PMEM mapped RSS / PSS p50 (MiB) | RSS/PSS | Cache identities | BLK root reads p50 (MiB) | Held memory saved p50 (MiB) |
+| State | VMs | Backing | PMEM mapped RSS / PSS p50 (MiB) | RSS/PSS | Cache identities | BLK root reads p50 (MiB) | Steady-state cgroup memory delta saved p50 (MiB) |
 |---|---:|---|---:|---:|---:|---:|---:|
 | cold | 1 | file | 6.5 / 6.5 | 1.00 | 1 | 6.3 | +9.9 |
 | cold | 1 | memfd | 6.3 / 6.3 | 1.00 | 1 | 6.3 | +10.2 |

@@ -186,19 +186,19 @@ extents、materialization window 和 file backing。
 | cache | 指标 | Current BLK | BLK + shared cache | Lazy PMEM |
 |---|---|---:|---:|---:|
 | cold | Application Ready | 2.801 s | 1.348 s | 1.112 s |
-| cold | held cgroup memory | 835.6 MiB | 628.1 MiB | 566.6 MiB |
+| cold | steady-state cgroup memory delta | 835.6 MiB | 628.1 MiB | 566.6 MiB |
 | warm | Application Ready | 2.948 s | 1.038 s | 0.977 s |
-| warm | held cgroup memory | 836.6 MiB | 613.1 MiB | 565.7 MiB |
+| warm | steady-state cgroup memory delta | 836.6 MiB | 613.1 MiB | 565.7 MiB |
 
 按 round 配对：
 
 - shared-cache BLK 相对 Current BLK，cold/warm Application Ready 改善
-  56.3%/62.2%，held memory 改善 24.8%/26.6%；
+  56.3%/62.2%，steady-state cgroup memory delta 改善 24.8%/26.6%；
 - Lazy PMEM 相对 Current BLK，cold/warm Application Ready 改善
-  60.6%/65.2%，held memory 改善 32.0%/32.5%；
+  60.6%/65.2%，steady-state cgroup memory delta 改善 32.0%/32.5%；
 - PMEM 相对 shared-cache BLK 的独立增量：cold Application Ready 改善
   18.2%（95% bootstrap CI 0.8%..25.4%），warm 改善 8.0%
-  （CI -10.5%..12.0%，不显著）；cold/warm held memory 改善
+  （CI -10.5%..12.0%，不显著）；cold/warm steady-state cgroup memory delta 改善
   9.9%/7.9%，每组均 10/10 轮更低。
 
 这说明小工作集的大部分启动收益来自公共明文 cache，不能归因于 PMEM；PMEM
@@ -214,7 +214,7 @@ materialization window，并分别测试 file/memfd：
 - openEuler 165.95 MiB 全树高重合工作集共 120 个样本，每格 10 个配对轮次；
   8 VM 下 PMEM 相对 shared-cache BLK 的配对中位改善如下：
 
-| backing | 全树扫描 | measured group memory | whole-cgroup memory | operation CPU | PMEM 胜率 |
+| backing | 全树扫描 | post-launch cgroup memory delta | steady-state cgroup memory delta | operation CPU | PMEM 胜率 |
 |---|---:|---:|---:|---:|---:|
 | file | 84.0% | 67.5% | 61.6% | 81.9% | 10/10 |
 | memfd | 76.7% | 67.6% | 61.9% | 77.9% | 10/10 |

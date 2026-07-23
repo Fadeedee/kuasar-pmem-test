@@ -264,7 +264,7 @@ def write_report(
         "",
         "## Cell medians",
         "",
-        "| VMs | Transport | Backing | App Ready p50/p95 (s) | Tree scan p50/p95 (s) | Total memory p50 (MiB) | Operation CPU p50 (s) |",
+        "| VMs | Transport | Backing | App Ready p50/p95 (s) | Tree scan p50/p95 (s) | Steady-state cgroup memory delta p50 (MiB) | Operation CPU p50 (s) |",
         "|---:|---|---|---:|---:|---:|---:|",
     ]
     for vm_count in vm_counts:
@@ -288,7 +288,7 @@ def write_report(
             "",
             "Positive values mean memfd is lower. Win rate is based on paired rounds.",
             "",
-            "| VMs | Transport | Tree scan median / wins | Total memory median / wins | Host writes median / wins |",
+            "| VMs | Transport | Tree scan median / wins | Steady-state cgroup memory delta median / wins | Host writes median / wins |",
             "|---:|---|---:|---:|---:|",
         ]
     )
@@ -312,7 +312,7 @@ def write_report(
             "",
             "Positive values mean Lazy PMEM is lower under the same backing.",
             "",
-            "| VMs | Backing | Tree scan median / wins | Measured memory median / wins | Total memory median / wins | CPU median / wins |",
+            "| VMs | Backing | Tree scan median / wins | Post-launch cgroup memory delta median / wins | Steady-state cgroup memory delta median / wins | CPU median / wins |",
             "|---:|---|---:|---:|---:|---:|",
         ]
     )

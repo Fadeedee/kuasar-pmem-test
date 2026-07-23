@@ -283,7 +283,7 @@ def render_markdown(
         "",
         "## Cell medians",
         "",
-        "| State | VMs | Transport | Backing | App Ready p50 / p95 (s) | First op p50 (ms) | Held memory p50 (MiB) | CPU to ready p50 (ms) | Host writes p50 (MiB) |",
+        "| State | VMs | Transport | Backing | App Ready p50 / p95 (s) | First op p50 (ms) | Steady-state cgroup memory delta p50 (MiB) | CPU to ready p50 (ms) | Host writes p50 (MiB) |",
         "|---|---:|---|---|---:|---:|---:|---:|---:|",
     ]
     for row in cells:
@@ -310,7 +310,7 @@ def render_markdown(
             "",
             "Positive values mean memfd is lower; win rate is the fraction of paired rounds in which memfd is lower.",
             "",
-            "| State | VMs | Transport | App Ready median / wins | Held memory median / wins | Host writes median / wins |",
+            "| State | VMs | Transport | App Ready median / wins | Steady-state cgroup memory delta median / wins | Host writes median / wins |",
             "|---|---:|---|---:|---:|---:|",
         ]
     )
@@ -337,7 +337,7 @@ def render_markdown(
             "",
             "Positive values mean Lazy PMEM is lower under the same backing and source state.",
             "",
-            "| State | VMs | Backing | App Ready median / wins | First op median / wins | Held memory median / wins | Total PSS median / wins |",
+            "| State | VMs | Backing | App Ready median / wins | First op median / wins | Steady-state cgroup memory delta median / wins | Total PSS median / wins |",
             "|---|---:|---|---:|---:|---:|---:|",
         ]
     )
@@ -366,7 +366,7 @@ def render_markdown(
             "",
             "Mapped RSS counts the same cache pages in every VMM; mapped PSS divides shared pages by the number of mappings. A ratio close to the VM count and one mapping identity indicate cross-VM sharing of one final cache object.",
             "",
-            "| State | VMs | Backing | PMEM mapped RSS / PSS p50 (MiB) | RSS/PSS | Cache identities | BLK root reads p50 (MiB) | Held memory saved p50 (MiB) |",
+            "| State | VMs | Backing | PMEM mapped RSS / PSS p50 (MiB) | RSS/PSS | Cache identities | BLK root reads p50 (MiB) | Steady-state cgroup memory delta saved p50 (MiB) |",
             "|---|---:|---|---:|---:|---:|---:|---:|",
         ]
     )

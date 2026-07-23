@@ -460,7 +460,7 @@ cpu.stat: usage/user/system
 io.stat: rbytes/wbytes/rios/wios，跨设备求和
 ```
 
-报告里的 `held memory` 是：
+报告里的 `steady-state cgroup memory delta` 是：
 
 ```text
 held_memory_current_bytes - worker_baseline_memory_current_bytes
@@ -479,8 +479,8 @@ worker 遍历 sandbox 进程及其：
 
 它汇总 sandbox 进程族 PSS，并单独加上 lazyd PSS。
 
-PSS 是辅助指标。节点总内存比较优先使用 whole-cgroup memory，因为 PSS 不包含所有
-内核计费，也容易因进程边界遗漏。
+PSS 是辅助指标。受测工作负载栈的内存比较优先使用 steady-state cgroup memory
+delta，因为 PSS 不包含所有内核计费，也容易因进程边界遗漏。
 
 ### 8.10 PMEM 映射证据
 
@@ -620,7 +620,7 @@ warm sample 使用 final-baseline，只统计 warmup 后的正式组。
 6. 发起被测 HTTP 请求；
 7. 输出响应 SHA-256 和字节数；
 8. 输出 operation-end 和 ready；
-9. 保持 VM 存活，供 held memory 采样。
+9. 保持 VM 存活，供 steady-state cgroup memory delta 采样。
 
 ### 10.2 full-tree scan
 
@@ -1329,13 +1329,14 @@ python3 \
 ### 23.1 可以证明
 
 1. 当前三条路径都能完成相同 Nginx 请求并返回完全相同内容；
-2. shared plaintext cache 能显著减少当前 BLK 的重复取数、CPU 和内存；
-3. 在同样使用 shared cache 时，Lazy PMEM 在 8 VM 下继续降低 held memory；
+2. shared plaintext cache 能复用已物化明文范围，减少重复解密和数据复制；
+3. 在同样使用 shared cache 时，Lazy PMEM 在 8 VM 下继续降低 steady-state
+   cgroup memory delta；
 4. 高重合 full-tree workload 下，PMEM 明显减少逐 VM Guest page cache 副本；
 5. 多个 CH 映射的是同一个 cache identity，页面是 Shared_Clean，无 Private_Dirty；
 6. PMEM 正式样本逐个满足 fault/FETCH/mmap/wake counter 闭环；
 7. warm 正式阶段没有重新访问 accelerator 物化数据；
-8. 单次同步 materialization 没有超过 1 MiB 配置窗口；
+8. 单个同步 materialization extent 没有超过 1 MiB 配置窗口；
 9. file backing 在硬内存限制边缘比 memfd 多约 16 至 32 MiB 回收余量。
 
 ### 23.2 不能证明
@@ -1433,7 +1434,7 @@ PMEM 的独特收益是多个同镜像 VM 共享最终 EROFS Host 文件页，
 ### 为什么不用单进程 RSS？
 
 单进程 RSS 会重复计算共享页，也会漏掉 lazyd、sandboxer 和内核计费。
-主指标使用 whole-cgroup memory，PSS 和 smaps 只用于解释共享机制。
+主指标使用 steady-state cgroup memory delta，PSS 和 smaps 只用于解释共享机制。
 
 ### 为什么还要 PSS？
 

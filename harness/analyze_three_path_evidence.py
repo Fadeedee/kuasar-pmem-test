@@ -807,7 +807,8 @@ def build_report(
         lines.append(
             f"- **{STATE_LABELS[state]} / {max_vm_count} VM**：Lazy PMEM 相比当前 BLK 的 Application Ready 中位数"
             f"{format_improvement(ready['improvement_pct_median'])}（95% bootstrap CI "
-            f"{ready['improvement_pct_ci_low']:.1f}%..{ready['improvement_pct_ci_high']:.1f}%），held cgroup memory "
+            f"{ready['improvement_pct_ci_low']:.1f}%..{ready['improvement_pct_ci_high']:.1f}%），"
+            "steady-state cgroup memory delta "
             f"{format_improvement(memory['improvement_pct_median'])}（CI "
             f"{memory['improvement_pct_ci_low']:.1f}%..{memory['improvement_pct_ci_high']:.1f}%）。"
         )
@@ -815,7 +816,8 @@ def build_report(
             f"- **{STATE_LABELS[state]} / {max_vm_count} VM 的 PMEM 增量**：相比同样复用明文 cache 的 BLK，Application Ready 中位数"
             f"{format_improvement(incremental_ready['improvement_pct_median'])}（CI "
             f"{incremental_ready['improvement_pct_ci_low']:.1f}%..{incremental_ready['improvement_pct_ci_high']:.1f}%，"
-            f"{incremental_ready['left_better_rounds']}/{rounds} 轮更快），memory "
+            f"{incremental_ready['left_better_rounds']}/{rounds} 轮更快），"
+            "steady-state cgroup memory delta "
             f"{format_improvement(incremental_memory['improvement_pct_median'])}（CI "
             f"{incremental_memory['improvement_pct_ci_low']:.1f}%..{incremental_memory['improvement_pct_ci_high']:.1f}%，"
             f"{incremental_memory['left_better_rounds']}/{rounds} 轮更低）。"
@@ -872,7 +874,8 @@ def build_report(
             "",
             "## Node memory",
             "",
-            "held memory 是独立 benchmark service cgroup 在所有 VM 就绪并完成首次请求后的 current-memory 增量，单位 MiB。",
+            "steady-state cgroup memory delta 是独立 benchmark service cgroup 在所有 VM "
+            "就绪并完成首次请求后的 `memory.current` 减去 worker baseline，单位 MiB。",
             "",
             "| cache | VMs | Current BLK | BLK + shared cache | Lazy PMEM |",
             "|---|---:|---:|---:|---:|",
@@ -892,7 +895,7 @@ def build_report(
     lines.extend(
         [
             "",
-            "![Held memory](held_memory.png)",
+            "![Steady-state cgroup memory delta](held_memory.png)",
             "",
             "## PMEM page sharing",
             "",
@@ -970,7 +973,7 @@ def main() -> int:
         (
             "held_memory.svg",
             "held_memory_mib",
-            "Whole benchmark cgroup memory",
+            "Steady-state cgroup memory delta",
             "MiB (median with p95 whisker)",
         ),
         (

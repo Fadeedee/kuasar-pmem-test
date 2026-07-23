@@ -9,10 +9,10 @@
 
 ## 结论
 
-- **Cold plaintext cache / 8 VM**：Lazy PMEM 相比当前 BLK 的 Application Ready 中位数降低 **60.6%**（95% bootstrap CI 54.8%..65.4%），held cgroup memory 降低 **32.0%**（CI 31.0%..32.4%）。
-- **Cold plaintext cache / 8 VM 的 PMEM 增量**：相比同样复用明文 cache 的 BLK，Application Ready 中位数降低 **18.2%**（CI 0.8%..25.4%，8/10 轮更快），memory 降低 **9.9%**（CI 8.7%..10.9%，10/10 轮更低）。
-- **Warm plaintext cache / 8 VM**：Lazy PMEM 相比当前 BLK 的 Application Ready 中位数降低 **65.2%**（95% bootstrap CI 62.1%..70.0%），held cgroup memory 降低 **32.5%**（CI 31.9%..33.2%）。
-- **Warm plaintext cache / 8 VM 的 PMEM 增量**：相比同样复用明文 cache 的 BLK，Application Ready 中位数降低 **8.0%**（CI -10.5%..12.0%，8/10 轮更快），memory 降低 **7.9%**（CI 7.0%..9.1%，10/10 轮更低）。
+- **Cold plaintext cache / 8 VM**：Lazy PMEM 相比当前 BLK 的 Application Ready 中位数降低 **60.6%**（95% bootstrap CI 54.8%..65.4%），steady-state cgroup memory delta 降低 **32.0%**（CI 31.0%..32.4%）。
+- **Cold plaintext cache / 8 VM 的 PMEM 增量**：相比同样复用明文 cache 的 BLK，Application Ready 中位数降低 **18.2%**（CI 0.8%..25.4%，8/10 轮更快），steady-state cgroup memory delta 降低 **9.9%**（CI 8.7%..10.9%，10/10 轮更低）。
+- **Warm plaintext cache / 8 VM**：Lazy PMEM 相比当前 BLK 的 Application Ready 中位数降低 **65.2%**（95% bootstrap CI 62.1%..70.0%），steady-state cgroup memory delta 降低 **32.5%**（CI 31.9%..33.2%）。
+- **Warm plaintext cache / 8 VM 的 PMEM 增量**：相比同样复用明文 cache 的 BLK，Application Ready 中位数降低 **8.0%**（CI -10.5%..12.0%，8/10 轮更快），steady-state cgroup memory delta 降低 **7.9%**（CI 7.0%..9.1%，10/10 轮更低）。
 - 8 VM Lazy PMEM 的映射 RSS 中位数为 **52.2 MiB**，但 PSS 仅 **6.5 MiB**；10 轮均只有一个 cache identity，且 private dirty 为 0。
 - cold 阶段 shared-cache BLK 物化 **11.05 MiB**，Lazy PMEM 物化 **10.27 MiB**；两条路径单次 accelerator read-range / lazyd materialization 最大分别为 **876 KiB** 和 **876 KiB**，均不超过配置窗口 **1024 KiB**。transport 访问模式不同，因此累计工作集分别统计；warm 正式阶段的远端取数为 0。
 - Current BLK 与 shared-cache BLK 的差值用于衡量公共明文 cache 的收益；shared-cache BLK 与 Lazy PMEM 的差值用于隔离 PMEM/DAX transport 的增量，不能把前者的收益归因于 PMEM。
@@ -35,7 +35,7 @@ Application Ready 是同组最后一个 VM 输出应用就绪标记的时间，�
 
 ## Node memory
 
-held memory 是独立 benchmark service cgroup 在所有 VM 就绪并完成首次请求后的 current-memory 增量，单位 MiB。
+steady-state cgroup memory delta 是独立 benchmark service cgroup 在所有 VM 就绪并完成首次请求后的 `memory.current` 减去 worker baseline，单位 MiB。
 
 | cache | VMs | Current BLK | BLK + shared cache | Lazy PMEM |
 |---|---:|---:|---:|---:|
@@ -46,7 +46,7 @@ held memory 是独立 benchmark service cgroup 在所有 VM 就绪并完成首�
 | Warm plaintext cache | 4 | 429.7 / 437.2 | 332.6 / 336.0 | 304.6 / 312.5 |
 | Warm plaintext cache | 8 | 836.6 / 846.7 | 613.1 / 622.2 | 565.7 / 572.9 |
 
-![Held memory](held_memory.png)
+![Steady-state cgroup memory delta](held_memory.png)
 
 ## PMEM page sharing
 

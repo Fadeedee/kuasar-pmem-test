@@ -44,7 +44,7 @@
 <circle cx="120.0" cy="339.5" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
 <circle cx="407.0" cy="305.5" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
 <circle cx="694.0" cy="260.8" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
-<text x="750" y="138" font-size="20" font-weight="600" fill="#111827">Cold final cache: held node memory</text>
+<text x="750" y="138" font-size="20" font-weight="600" fill="#111827">Cold final cache: steady-state cgroup memory delta</text>
 <line x1="822" y1="162" x2="822" y2="427" stroke="#6b7280" stroke-width="1"/>
 <line x1="822" y1="427" x2="1396" y2="427" stroke="#6b7280" stroke-width="1"/>
 <line x1="822" y1="427.0" x2="1396" y2="427.0" stroke="#e5e7eb" stroke-width="1"/>
@@ -112,7 +112,7 @@
 <circle cx="120.0" cy="767.4" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
 <circle cx="407.0" cy="744.9" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
 <circle cx="694.0" cy="586.6" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
-<text x="750" y="528" font-size="20" font-weight="600" fill="#111827">Warm final cache: held node memory</text>
+<text x="750" y="528" font-size="20" font-weight="600" fill="#111827">Warm final cache: steady-state cgroup memory delta</text>
 <line x1="822" y1="552" x2="822" y2="817" stroke="#6b7280" stroke-width="1"/>
 <line x1="822" y1="817" x2="1396" y2="817" stroke="#6b7280" stroke-width="1"/>
 <line x1="822" y1="817.0" x2="1396" y2="817.0" stroke="#e5e7eb" stroke-width="1"/>

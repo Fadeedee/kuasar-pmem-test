@@ -72,19 +72,19 @@ fault/FETCH/mmap/wake 闭合、单 cache identity、无 private dirty；cache-wa
 | cache | 指标 | Current BLK | BLK + shared cache | Lazy PMEM |
 |---|---|---:|---:|---:|
 | cold | Application Ready | 2.801 s | 1.348 s | 1.112 s |
-| cold | held cgroup memory | 835.6 MiB | 628.1 MiB | 566.6 MiB |
+| cold | steady-state cgroup memory delta | 835.6 MiB | 628.1 MiB | 566.6 MiB |
 | warm | Application Ready | 2.948 s | 1.038 s | 0.977 s |
-| warm | held cgroup memory | 836.6 MiB | 613.1 MiB | 565.7 MiB |
+| warm | steady-state cgroup memory delta | 836.6 MiB | 613.1 MiB | 565.7 MiB |
 
 按 round 配对后：
 
 - shared-cache BLK 相对 Current BLK，cold/warm Application Ready 分别改善
-  56.3%/62.2%，held memory 分别改善 24.8%/26.6%；
+  56.3%/62.2%，steady-state cgroup memory delta 分别改善 24.8%/26.6%；
 - Lazy PMEM 相对 Current BLK，cold/warm Application Ready 分别改善
-  60.6%/65.2%，held memory 分别改善 32.0%/32.5%；
+  60.6%/65.2%，steady-state cgroup memory delta 分别改善 32.0%/32.5%；
 - Lazy PMEM 相对 shared-cache BLK，cold Application Ready 改善 18.2%
   （95% bootstrap CI 0.8%..25.4%），warm 改善 8.0%
-  （CI -10.5%..12.0%，不显著）；held memory 在 cold/warm 下分别改善
+  （CI -10.5%..12.0%，不显著）；steady-state cgroup memory delta 在 cold/warm 下分别改善
   9.9%/7.9%，10/10 轮均更低。
 
 因此，小工作集的大部分启动和 CPU 收益来自公共明文 cache；PMEM 的稳定独立
@@ -111,7 +111,7 @@ memfd 明显减少冷路径持久化写入。warm cache 时 file/memfd 没有稳
 
 每个 VM 遍历同一 openEuler EROFS 可见树并读取 165.95 MiB。8 VM 中位数：
 
-| Transport | Backing | 全树扫描 | whole-cgroup memory | operation CPU |
+| Transport | Backing | 全树扫描 | steady-state cgroup memory delta | operation CPU |
 |---|---|---:|---:|---:|
 | Shared BLK | file | 7.463 s | 2510.4 MiB | 70.02 s |
 | Shared BLK | memfd | 6.012 s | 2511.6 MiB | 64.50 s |
@@ -120,7 +120,7 @@ memfd 明显减少冷路径持久化写入。warm cache 时 file/memfd 没有稳
 
 在相同 backing 下，PMEM 相对 shared-cache BLK 的成对中位改善：
 
-| Backing | 全树扫描 | measured group memory | whole-cgroup memory | operation CPU | 胜率 |
+| Backing | 全树扫描 | post-launch cgroup memory delta | steady-state cgroup memory delta | operation CPU | 胜率 |
 |---|---:|---:|---:|---:|---:|
 | file | 84.0% | 67.5% | 61.6% | 81.9% | 10/10 |
 | memfd | 76.7% | 67.6% | 61.9% | 77.9% | 10/10 |

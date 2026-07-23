@@ -4,7 +4,7 @@ Each VM reads 165.95 MiB from the same assembled EROFS tree. Every cell contains
 
 ## Cell medians
 
-| VMs | Transport | Backing | App Ready p50/p95 (s) | Tree scan p50/p95 (s) | Total memory p50 (MiB) | Operation CPU p50 (s) |
+| VMs | Transport | Backing | App Ready p50/p95 (s) | Tree scan p50/p95 (s) | Steady-state cgroup memory delta p50 (MiB) | Operation CPU p50 (s) |
 |---:|---|---|---:|---:|---:|---:|
 | 1 | Shared BLK | file | 0.378/0.421 | 2.458/3.005 | 505.2 | 4.37 |
 | 1 | Shared BLK | memfd | 0.382/0.399 | 2.629/2.912 | 499.4 | 4.61 |
@@ -23,7 +23,7 @@ Each VM reads 165.95 MiB from the same assembled EROFS tree. Every cell contains
 
 Positive values mean memfd is lower. Win rate is based on paired rounds.
 
-| VMs | Transport | Tree scan median / wins | Total memory median / wins | Host writes median / wins |
+| VMs | Transport | Tree scan median / wins | Steady-state cgroup memory delta median / wins | Host writes median / wins |
 |---:|---|---:|---:|---:|
 | 1 | Shared BLK | -0.1% / 50% | +1.2% / 90% | +0.0% / 0% |
 | 1 | Lazy PMEM | -2.5% / 30% | +1.6% / 90% | +0.0% / 0% |
@@ -36,7 +36,7 @@ Positive values mean memfd is lower. Win rate is based on paired rounds.
 
 Positive values mean Lazy PMEM is lower under the same backing.
 
-| VMs | Backing | Tree scan median / wins | Measured memory median / wins | Total memory median / wins | CPU median / wins |
+| VMs | Backing | Tree scan median / wins | Post-launch cgroup memory delta median / wins | Steady-state cgroup memory delta median / wins | CPU median / wins |
 |---:|---|---:|---:|---:|---:|
 | 1 | file | +63.2% / 100% | +68.1% / 100% | +38.5% / 100% | +70.4% / 100% |
 | 1 | memfd | +64.1% / 100% | +68.4% / 100% | +39.0% / 100% | +70.9% / 100% |

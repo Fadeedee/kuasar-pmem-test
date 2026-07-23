@@ -148,7 +148,7 @@ def render(data: dict[tuple[int, str, str], dict[str, str]]) -> str:
         panel(
             data,
             metric="total_memory_bytes_p50",
-            title="Whole-cgroup memory",
+            title="Steady-state cgroup memory delta",
             unit="MiB",
             divisor=1024 * 1024,
             x0=750,

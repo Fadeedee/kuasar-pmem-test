@@ -46,7 +46,7 @@
 <circle cx="123.0" cy="502.3" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
 <circle cx="410.5" cy="501.5" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
 <circle cx="698.0" cy="490.6" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
-<text x="750" y="130" font-size="21" font-weight="600" fill="#111827">Whole-cgroup memory</text>
+<text x="750" y="130" font-size="21" font-weight="600" fill="#111827">Steady-state cgroup memory delta</text>
 <line x1="825" y1="160" x2="825" y2="545" stroke="#6b7280"/>
 <line x1="825" y1="545" x2="1400" y2="545" stroke="#6b7280"/>
 <line x1="825" y1="545.0" x2="1400" y2="545.0" stroke="#e5e7eb"/>

@@ -173,7 +173,7 @@ def render(data: dict[tuple[str, int, str, str], dict[str, str]]) -> str:
                 data,
                 state=state,
                 metric="held_memory_bytes_p50",
-                title=f"{state_label}: held node memory",
+                title=f"{state_label}: steady-state cgroup memory delta",
                 unit="MiB",
                 x0=750,
                 y0=120 + row * 390,

@@ -1,0 +1,7 @@
+vm_count,cache_backing,samples,mapped_rss_kib_p50,mapped_pss_kib_p50,rss_pss_ratio_p50,mapping_identities_p50
+1,file,10,178208.0,178208.0,1.0,1.0
+1,memfd,10,178208.0,178208.0,1.0,1.0
+4,file,10,712832.0,178208.0,4.0,1.0
+4,memfd,10,712832.0,178208.0,4.0,1.0
+8,file,10,1425664.0,178208.0,8.0,1.0
+8,memfd,10,1425664.0,178208.0,8.0,1.0

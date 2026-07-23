@@ -1,0 +1,112 @@
+[
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 944,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 944.00390625
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 5,
+    "memory_max_mib": 944,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 0.0,
+    "passes": 0,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": null
+  },
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 960,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 960.0
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 2,
+    "memory_max_mib": 960,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 60.0,
+    "passes": 3,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 958.58203125
+  },
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 976,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 967.13671875
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 976,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 973.83984375
+  },
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 992,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 984.8984375
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 992,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 976.8125
+  },
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 1024,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 966.46484375
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 1024,
+    "mode": "lazy-pmem",
+    "pass_rate_percent": 100.0,
+    "passes": 5,
+    "runtime_failures": 0,
+    "samples": 5,
+    "successful_memory_peak_mib_p50": 970.9921875
+  }
+]

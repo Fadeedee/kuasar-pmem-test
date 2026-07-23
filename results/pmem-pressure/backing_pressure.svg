@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="650" viewBox="0 0 1440 650">
+<rect width="100%" height="100%" fill="white"/>
+<text x="48" y="46" font-size="28" font-weight="700" fill="#111827">8-VM full-tree completion under memory pressure</text>
+<text x="48" y="74" font-size="15" fill="#4b5563">Same 165.95 MiB EROFS tree; only transport, cache backing, and cgroup limit change</text>
+<line x1="970" y1="42" x2="1000" y2="42" stroke="#047857" stroke-width="4"/>
+<text x="1010" y="47" font-size="14" fill="#1f2937">file</text>
+<line x1="1100" y1="42" x2="1130" y2="42" stroke="#2563eb" stroke-width="4"/>
+<text x="1140" y="47" font-size="14" fill="#1f2937">memfd</text>
+<text x="48" y="130" font-size="21" font-weight="600" fill="#111827">Lazy PMEM (5 rounds)</text>
+<line x1="123" y1="160" x2="123" y2="545" stroke="#6b7280"/>
+<line x1="123" y1="545" x2="698" y2="545" stroke="#6b7280"/>
+<line x1="123" y1="545.0" x2="698" y2="545.0" stroke="#e5e7eb"/>
+<text x="113" y="549.0" text-anchor="end" font-size="12" fill="#4b5563">0</text>
+<line x1="123" y1="468.0" x2="698" y2="468.0" stroke="#e5e7eb"/>
+<text x="113" y="472.0" text-anchor="end" font-size="12" fill="#4b5563">20</text>
+<line x1="123" y1="391.0" x2="698" y2="391.0" stroke="#e5e7eb"/>
+<text x="113" y="395.0" text-anchor="end" font-size="12" fill="#4b5563">40</text>
+<line x1="123" y1="314.0" x2="698" y2="314.0" stroke="#e5e7eb"/>
+<text x="113" y="318.0" text-anchor="end" font-size="12" fill="#4b5563">60</text>
+<line x1="123" y1="237.0" x2="698" y2="237.0" stroke="#e5e7eb"/>
+<text x="113" y="241.0" text-anchor="end" font-size="12" fill="#4b5563">80</text>
+<line x1="123" y1="160.0" x2="698" y2="160.0" stroke="#e5e7eb"/>
+<text x="113" y="164.0" text-anchor="end" font-size="12" fill="#4b5563">100</text>
+<text x="68" y="148" font-size="12" fill="#4b5563">% pass</text>
+<text x="123.0" y="570" text-anchor="middle" font-size="13" fill="#374151">944</text>
+<text x="266.75" y="570" text-anchor="middle" font-size="13" fill="#374151">960</text>
+<text x="410.5" y="570" text-anchor="middle" font-size="13" fill="#374151">976</text>
+<text x="554.25" y="570" text-anchor="middle" font-size="13" fill="#374151">992</text>
+<text x="698.0" y="570" text-anchor="middle" font-size="13" fill="#374151">1024</text>
+<text x="410.5" y="594" text-anchor="middle" font-size="13" fill="#374151">MemoryMax (MiB), MemorySwapMax=0</text>
+<text x="123.0" y="149.0" text-anchor="middle" font-size="12" fill="#047857">5/5</text>
+<text x="266.75" y="149.0" text-anchor="middle" font-size="12" fill="#047857">5/5</text>
+<text x="410.5" y="149.0" text-anchor="middle" font-size="12" fill="#047857">5/5</text>
+<text x="554.25" y="149.0" text-anchor="middle" font-size="12" fill="#047857">5/5</text>
+<text x="698.0" y="149.0" text-anchor="middle" font-size="12" fill="#047857">5/5</text>
+<polyline fill="none" stroke="#047857" stroke-width="3" points="123.0,160.0 266.8,160.0 410.5,160.0 554.2,160.0 698.0,160.0"/>
+<circle cx="123.0" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<circle cx="266.8" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<circle cx="410.5" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<circle cx="554.2" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<circle cx="698.0" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<text x="123.0" y="534.0" text-anchor="middle" font-size="12" fill="#2563eb">0/5</text>
+<text x="266.75" y="303.0" text-anchor="middle" font-size="12" fill="#2563eb">3/5</text>
+<text x="410.5" y="180.0" text-anchor="middle" font-size="12" fill="#2563eb">5/5</text>
+<text x="554.25" y="180.0" text-anchor="middle" font-size="12" fill="#2563eb">5/5</text>
+<text x="698.0" y="180.0" text-anchor="middle" font-size="12" fill="#2563eb">5/5</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="123.0,545.0 266.8,314.0 410.5,160.0 554.2,160.0 698.0,160.0"/>
+<circle cx="123.0" cy="545.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<circle cx="266.8" cy="314.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<circle cx="410.5" cy="160.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<circle cx="554.2" cy="160.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<circle cx="698.0" cy="160.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<text x="750" y="130" font-size="21" font-weight="600" fill="#111827">Shared BLK (3 rounds)</text>
+<line x1="825" y1="160" x2="825" y2="545" stroke="#6b7280"/>
+<line x1="825" y1="545" x2="1400" y2="545" stroke="#6b7280"/>
+<line x1="825" y1="545.0" x2="1400" y2="545.0" stroke="#e5e7eb"/>
+<text x="815" y="549.0" text-anchor="end" font-size="12" fill="#4b5563">0</text>
+<line x1="825" y1="468.0" x2="1400" y2="468.0" stroke="#e5e7eb"/>
+<text x="815" y="472.0" text-anchor="end" font-size="12" fill="#4b5563">20</text>
+<line x1="825" y1="391.0" x2="1400" y2="391.0" stroke="#e5e7eb"/>
+<text x="815" y="395.0" text-anchor="end" font-size="12" fill="#4b5563">40</text>
+<line x1="825" y1="314.0" x2="1400" y2="314.0" stroke="#e5e7eb"/>
+<text x="815" y="318.0" text-anchor="end" font-size="12" fill="#4b5563">60</text>
+<line x1="825" y1="237.0" x2="1400" y2="237.0" stroke="#e5e7eb"/>
+<text x="815" y="241.0" text-anchor="end" font-size="12" fill="#4b5563">80</text>
+<line x1="825" y1="160.0" x2="1400" y2="160.0" stroke="#e5e7eb"/>
+<text x="815" y="164.0" text-anchor="end" font-size="12" fill="#4b5563">100</text>
+<text x="770" y="148" font-size="12" fill="#4b5563">% pass</text>
+<text x="825.0" y="570" text-anchor="middle" font-size="13" fill="#374151">2496</text>
+<text x="1112.5" y="570" text-anchor="middle" font-size="13" fill="#374151">2528</text>
+<text x="1400.0" y="570" text-anchor="middle" font-size="13" fill="#374151">2560</text>
+<text x="1112.5" y="594" text-anchor="middle" font-size="13" fill="#374151">MemoryMax (MiB), MemorySwapMax=0</text>
+<text x="825.0" y="149.0" text-anchor="middle" font-size="12" fill="#047857">3/3</text>
+<text x="1112.5" y="149.0" text-anchor="middle" font-size="12" fill="#047857">3/3</text>
+<text x="1400.0" y="149.0" text-anchor="middle" font-size="12" fill="#047857">3/3</text>
+<polyline fill="none" stroke="#047857" stroke-width="3" points="825.0,160.0 1112.5,160.0 1400.0,160.0"/>
+<circle cx="825.0" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<circle cx="1112.5" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<circle cx="1400.0" cy="160.0" r="5" fill="#047857" stroke="white" stroke-width="1.5"/>
+<text x="825.0" y="534.0" text-anchor="middle" font-size="12" fill="#2563eb">0/3</text>
+<text x="1112.5" y="180.0" text-anchor="middle" font-size="12" fill="#2563eb">3/3</text>
+<text x="1400.0" y="180.0" text-anchor="middle" font-size="12" fill="#2563eb">3/3</text>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="825.0,545.0 1112.5,160.0 1400.0,160.0"/>
+<circle cx="825.0" cy="545.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<circle cx="1112.5" cy="160.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+<circle cx="1400.0" cy="160.0" r="5" fill="#2563eb" stroke="white" stroke-width="1.5"/>
+</svg>

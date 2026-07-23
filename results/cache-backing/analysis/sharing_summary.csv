@@ -1,0 +1,13 @@
+source_state,vm_count,cache_backing,pairs,mapped_rss_kib_p50,mapped_pss_kib_p50,sharing_ratio_p50,mapping_identities_p50,blk_read_bytes_p50,held_memory_saved_bytes_p50
+plaintext-cold,1,file,10,6680.0,6680.0,1.0,1.0,6561792.0,10428416.0
+plaintext-cold,1,memfd,10,6488.0,6488.0,1.0,1.0,6561792.0,10659840.0
+plaintext-cold,4,file,10,26704.0,6678.5,3.9994010182689426,1.0,26247168.0,29163520.0
+plaintext-cold,4,memfd,10,25952.0,6488.0,4.0,1.0,26247168.0,27867136.0
+plaintext-cold,8,file,10,53416.0,6677.0,8.0,1.0,52494336.0,65384448.0
+plaintext-cold,8,memfd,10,51904.0,6488.0,8.0,1.0,52494336.0,64917504.0
+plaintext-warm,1,file,10,6680.0,6680.0,1.0,1.0,6561792.0,8386560.0
+plaintext-warm,1,memfd,10,6488.0,6488.0,1.0,1.0,6561792.0,7512064.0
+plaintext-warm,4,file,10,26720.0,6680.0,4.0,1.0,26247168.0,28489728.0
+plaintext-warm,4,memfd,10,25952.0,6488.0,4.0,1.0,26247168.0,31379456.0
+plaintext-warm,8,file,10,53440.0,6680.0,8.0,1.0,52494336.0,54904832.0
+plaintext-warm,8,memfd,10,51904.0,6488.0,8.0,1.0,52494336.0,56270848.0

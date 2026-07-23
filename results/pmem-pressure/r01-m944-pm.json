@@ -1,0 +1,20 @@
+{
+  "cache_backing": "memfd",
+  "classification": "memory-limit",
+  "execution_order": 2,
+  "log": "/root/virtiolazyd/benchmark-results/20260723-pmem-backing-pressure-final/worker-logs/r01-m944-pm.log",
+  "memory_max_mib": 944,
+  "mode": "lazy-pmem",
+  "returncode": 1,
+  "round": 1,
+  "systemd": {
+    "CPUUsageNSec": "25803045000",
+    "ExecMainCode": "2",
+    "ExecMainStatus": "15",
+    "MemoryPeak": "989859840",
+    "Result": "oom-kill"
+  },
+  "unit": "klp-q-r01-m944-pm",
+  "vm_count": 8,
+  "worker_result_path": null
+}

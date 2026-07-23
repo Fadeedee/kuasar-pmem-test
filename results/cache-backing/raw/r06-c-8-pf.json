@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "round": 6,
+  "execution_order": 2,
+  "mode": "lazy-pmem",
+  "cache_backing": "file",
+  "source_state": "plaintext-cold",
+  "vm_count": 8,
+  "image": "nginx-1.27.3-alpine",
+  "manifest_key": "041e73778edfd83e6bfb863c3f00307f83d97cca3b45b480a647a29a54aeaee2",
+  "manifest_image_bytes": 49394254,
+  "capture_order": [
+    "worker_baseline",
+    "prelaunch",
+    "app_ready",
+    "operation_complete",
+    "held"
+  ],
+  "group": {
+    "cloud_hypervisor_started_seconds": 0.463822897,
+    "launch_ack_seconds": 0.809592374,
+    "application_ready_seconds": 1.030674954,
+    "operation_begin_seconds": 3.031700615,
+    "operation_complete_seconds": 3.034077779,
+    "first_operation_max_seconds": 0.002921822
+  },
+  "workload": {
+    "name": "nginx-first-request",
+    "response_sha256": "fb47468a2cd3953c7131431991afcc6a2703f14640520102eea0a685a7e8d6de",
+    "response_bytes": 615
+  },
+  "vms": [
+    {
+      "vm_index": 1,
+      "host_to_ch_seconds": 0.191050574,
+      "ch_to_launch_seconds": 0.394352562,
+      "launch_to_app_seconds": 0.445271818,
+      "first_operation_seconds": 0.002377164
+    },
+    {
+      "vm_index": 2,
+      "host_to_ch_seconds": 0.320698326,
+      "ch_to_launch_seconds": 0.392445198,
+      "launch_to_app_seconds": 0.246570726,
+      "first_operation_seconds": 0.002827494
+    },
+    {
+      "vm_index": 3,
+      "host_to_ch_seconds": 0.338261209,
+      "ch_to_launch_seconds": 0.386052598,
+      "launch_to_app_seconds": 0.252017483,
+      "first_operation_seconds": 0.002439456
+    },
+    {
+      "vm_index": 4,
+      "host_to_ch_seconds": 0.356342759,
+      "ch_to_launch_seconds": 0.380046202,
+      "launch_to_app_seconds": 0.248430526,
+      "first_operation_seconds": 0.002861502
+    },
+    {
+      "vm_index": 5,
+      "host_to_ch_seconds": 0.374473085,
+      "ch_to_launch_seconds": 0.375730713,
+      "launch_to_app_seconds": 0.249156703,
+      "first_operation_seconds": 0.002921822
+    },
+    {
+      "vm_index": 6,
+      "host_to_ch_seconds": 0.400698739,
+      "ch_to_launch_seconds": 0.382669233,
+      "launch_to_app_seconds": 0.163953856,
+      "first_operation_seconds": 0.002566639
+    },
+    {
+      "vm_index": 7,
+      "host_to_ch_seconds": 0.429188724,
+      "ch_to_launch_seconds": 0.355458239,
+      "launch_to_app_seconds": 0.16526474,
+      "first_operation_seconds": 0.001478746
+    },
+    {
+      "vm_index": 8,
+      "host_to_ch_seconds": 0.446612833,
+      "ch_to_launch_seconds": 0.345769477,
+      "launch_to_app_seconds": 0.154918757,
+      "first_operation_seconds": 0.002665741
+    }
+  ],
+  "metrics": {
+    "worker_baseline_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "worker_baseline_captured_ns": 157541767029212,
+    "worker_baseline_memory_current_bytes": 10338304,
+    "worker_baseline_memory_peak_bytes": 10338304,
+    "worker_baseline_memory_anon_bytes": 10162176,
+    "worker_baseline_memory_file_bytes": 0,
+    "worker_baseline_memory_kernel_bytes": 135168,
+    "worker_baseline_memory_pagetables_bytes": 94208,
+    "worker_baseline_memory_slab_bytes": 28128,
+    "worker_baseline_memory_shmem_bytes": 0,
+    "prelaunch_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "prelaunch_captured_ns": 157542336745999,
+    "prelaunch_memory_current_bytes": 20549632,
+    "prelaunch_memory_peak_bytes": 20815872,
+    "prelaunch_memory_anon_bytes": 16441344,
+    "prelaunch_memory_file_bytes": 16384,
+    "prelaunch_memory_kernel_bytes": 2387968,
+    "prelaunch_memory_pagetables_bytes": 757760,
+    "prelaunch_memory_slab_bytes": 992936,
+    "prelaunch_memory_shmem_bytes": 0,
+    "prelaunch_delta_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "prelaunch_delta_captured_ns": 157542336745999,
+    "prelaunch_delta_memory_current_bytes": 10211328,
+    "prelaunch_delta_memory_peak_bytes": 10477568,
+    "prelaunch_delta_memory_anon_bytes": 6279168,
+    "prelaunch_delta_memory_file_bytes": 16384,
+    "prelaunch_delta_memory_kernel_bytes": 2252800,
+    "prelaunch_delta_memory_pagetables_bytes": 663552,
+    "prelaunch_delta_memory_slab_bytes": 964808,
+    "prelaunch_delta_memory_shmem_bytes": 0,
+    "app_ready_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "app_ready_captured_ns": 157543370161335,
+    "app_ready_memory_current_bytes": 607891456,
+    "app_ready_memory_peak_bytes": 608555008,
+    "app_ready_memory_anon_bytes": 169021440,
+    "app_ready_memory_file_bytes": 408752128,
+    "app_ready_memory_kernel_bytes": 27709440,
+    "app_ready_memory_pagetables_bytes": 6815744,
+    "app_ready_memory_slab_bytes": 10435568,
+    "app_ready_memory_shmem_bytes": 396230656,
+    "app_ready_delta_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "app_ready_delta_captured_ns": 157543370161335,
+    "app_ready_delta_memory_current_bytes": 597553152,
+    "app_ready_delta_memory_peak_bytes": 598216704,
+    "app_ready_delta_memory_anon_bytes": 158859264,
+    "app_ready_delta_memory_file_bytes": 408752128,
+    "app_ready_delta_memory_kernel_bytes": 27574272,
+    "app_ready_delta_memory_pagetables_bytes": 6721536,
+    "app_ready_delta_memory_slab_bytes": 10407440,
+    "app_ready_delta_memory_shmem_bytes": 396230656,
+    "operation_complete_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "operation_complete_captured_ns": 157545373538539,
+    "operation_complete_memory_current_bytes": 606973952,
+    "operation_complete_memory_peak_bytes": 608555008,
+    "operation_complete_memory_anon_bytes": 168189952,
+    "operation_complete_memory_file_bytes": 408752128,
+    "operation_complete_memory_kernel_bytes": 27693056,
+    "operation_complete_memory_pagetables_bytes": 6815744,
+    "operation_complete_memory_slab_bytes": 10429008,
+    "operation_complete_memory_shmem_bytes": 396230656,
+    "operation_complete_delta_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "operation_complete_delta_captured_ns": 157545373538539,
+    "operation_complete_delta_memory_current_bytes": 596635648,
+    "operation_complete_delta_memory_peak_bytes": 598216704,
+    "operation_complete_delta_memory_anon_bytes": 158027776,
+    "operation_complete_delta_memory_file_bytes": 408752128,
+    "operation_complete_delta_memory_kernel_bytes": 27557888,
+    "operation_complete_delta_memory_pagetables_bytes": 6721536,
+    "operation_complete_delta_memory_slab_bytes": 10400880,
+    "operation_complete_delta_memory_shmem_bytes": 396230656,
+    "held_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "held_captured_ns": 157546374691676,
+    "held_memory_current_bytes": 607236096,
+    "held_memory_peak_bytes": 608555008,
+    "held_memory_anon_bytes": 168189952,
+    "held_memory_file_bytes": 408752128,
+    "held_memory_kernel_bytes": 27693056,
+    "held_memory_pagetables_bytes": 6815744,
+    "held_memory_slab_bytes": 10429008,
+    "held_memory_shmem_bytes": 396230656,
+    "held_delta_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "held_delta_captured_ns": 157546374691676,
+    "held_delta_memory_current_bytes": 596897792,
+    "held_delta_memory_peak_bytes": 598216704,
+    "held_delta_memory_anon_bytes": 158027776,
+    "held_delta_memory_file_bytes": 408752128,
+    "held_delta_memory_kernel_bytes": 27557888,
+    "held_delta_memory_pagetables_bytes": 6721536,
+    "held_delta_memory_slab_bytes": 10400880,
+    "held_delta_memory_shmem_bytes": 396230656,
+    "worker_baseline_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "worker_baseline_accounting_captured_ns": 157541767161844,
+    "worker_baseline_cpu_usage_usec": 35796,
+    "worker_baseline_cpu_user_usec": 27841,
+    "worker_baseline_cpu_system_usec": 7954,
+    "worker_baseline_io_rbytes": 0,
+    "worker_baseline_io_wbytes": 0,
+    "worker_baseline_io_rios": 0,
+    "worker_baseline_io_wios": 0,
+    "prelaunch_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "prelaunch_accounting_captured_ns": 157542337176551,
+    "prelaunch_cpu_usage_usec": 134877,
+    "prelaunch_cpu_user_usec": 69482,
+    "prelaunch_cpu_system_usec": 65395,
+    "prelaunch_io_rbytes": 0,
+    "prelaunch_io_wbytes": 0,
+    "prelaunch_io_rios": 0,
+    "prelaunch_io_wios": 0,
+    "prelaunch_delta_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "prelaunch_delta_accounting_captured_ns": 157542337176551,
+    "prelaunch_delta_cpu_usage_usec": 99081,
+    "prelaunch_delta_cpu_user_usec": 41641,
+    "prelaunch_delta_cpu_system_usec": 57441,
+    "prelaunch_delta_io_rbytes": 0,
+    "prelaunch_delta_io_wbytes": 0,
+    "prelaunch_delta_io_rios": 0,
+    "prelaunch_delta_io_wios": 0,
+    "app_ready_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "app_ready_accounting_captured_ns": 157543370431710,
+    "app_ready_cpu_usage_usec": 3807829,
+    "app_ready_cpu_user_usec": 2161969,
+    "app_ready_cpu_system_usec": 1645860,
+    "app_ready_io_rbytes": 0,
+    "app_ready_io_wbytes": 12419072,
+    "app_ready_io_rios": 0,
+    "app_ready_io_wios": 121,
+    "app_ready_delta_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "app_ready_delta_accounting_captured_ns": 157543370431710,
+    "app_ready_delta_cpu_usage_usec": 3772033,
+    "app_ready_delta_cpu_user_usec": 2134128,
+    "app_ready_delta_cpu_system_usec": 1637906,
+    "app_ready_delta_io_rbytes": 0,
+    "app_ready_delta_io_wbytes": 12419072,
+    "app_ready_delta_io_rios": 0,
+    "app_ready_delta_io_wios": 121,
+    "operation_complete_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "operation_complete_accounting_captured_ns": 157545373834645,
+    "operation_complete_cpu_usage_usec": 3914077,
+    "operation_complete_cpu_user_usec": 2226207,
+    "operation_complete_cpu_system_usec": 1687870,
+    "operation_complete_io_rbytes": 0,
+    "operation_complete_io_wbytes": 12419072,
+    "operation_complete_io_rios": 0,
+    "operation_complete_io_wios": 121,
+    "operation_complete_delta_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "operation_complete_delta_accounting_captured_ns": 157545373834645,
+    "operation_complete_delta_cpu_usage_usec": 3878281,
+    "operation_complete_delta_cpu_user_usec": 2198366,
+    "operation_complete_delta_cpu_system_usec": 1679916,
+    "operation_complete_delta_io_rbytes": 0,
+    "operation_complete_delta_io_wbytes": 12419072,
+    "operation_complete_delta_io_rios": 0,
+    "operation_complete_delta_io_wios": 121,
+    "held_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "held_accounting_captured_ns": 157546375018913,
+    "held_cpu_usage_usec": 3943312,
+    "held_cpu_user_usec": 2238314,
+    "held_cpu_system_usec": 1704997,
+    "held_io_rbytes": 0,
+    "held_io_wbytes": 12419072,
+    "held_io_rios": 0,
+    "held_io_wios": 121,
+    "held_delta_accounting_cgroup_path": "/sys/fs/cgroup/system.slice/klp-e-r06-c-8-pf.service",
+    "held_delta_accounting_captured_ns": 157546375018913,
+    "held_delta_cpu_usage_usec": 3907516,
+    "held_delta_cpu_user_usec": 2210473,
+    "held_delta_cpu_system_usec": 1697043,
+    "held_delta_io_rbytes": 0,
+    "held_delta_io_wbytes": 12419072,
+    "held_delta_io_rios": 0,
+    "held_delta_io_wios": 121
+  },
+  "cache": {
+    "worker_baseline": {
+      "allocated_bytes": 0,
+      "ready": null
+    },
+    "prelaunch": {
+      "allocated_bytes": 0,
+      "ready": null
+    },
+    "app_ready": {
+      "allocated_bytes": 10784768,
+      "ready": {
+        "cache_path": "/root/virtiolazyd/benchmark-results/20260723-cache-backing-evidence/runtime/cb062cpf8-115104/lazyd-service/lazyd-cache/sha256-c6735307f60a235a0b75d9d78aa70514a18f2b647d07ee2865b512e0bd645c2c/layer.erofs",
+        "cache_dev": "08:20",
+        "cache_inode": 819620,
+        "cache_blocks": 21048,
+        "cache_mtime_ns": 1784782444825592599,
+        "bitmap_blocks": 16,
+        "bitmap_mtime_ns": 1784782444841592600
+      }
+    },
+    "operation_complete": {
+      "allocated_bytes": 10784768,
+      "ready": {
+        "cache_path": "/root/virtiolazyd/benchmark-results/20260723-cache-backing-evidence/runtime/cb062cpf8-115104/lazyd-service/lazyd-cache/sha256-c6735307f60a235a0b75d9d78aa70514a18f2b647d07ee2865b512e0bd645c2c/layer.erofs",
+        "cache_dev": "08:20",
+        "cache_inode": 819620,
+        "cache_blocks": 21048,
+        "cache_mtime_ns": 1784782444825592599,
+        "bitmap_blocks": 16,
+        "bitmap_mtime_ns": 1784782444841592600
+      }
+    },
+    "held": {
+      "allocated_bytes": 10784768,
+      "ready": {
+        "cache_path": "/root/virtiolazyd/benchmark-results/20260723-cache-backing-evidence/runtime/cb062cpf8-115104/lazyd-service/lazyd-cache/sha256-c6735307f60a235a0b75d9d78aa70514a18f2b647d07ee2865b512e0bd645c2c/layer.erofs",
+        "cache_dev": "08:20",
+        "cache_inode": 819620,
+        "cache_blocks": 21048,
+        "cache_mtime_ns": 1784782444825592599,
+        "bitmap_blocks": 16,
+        "bitmap_mtime_ns": 1784782444841592600
+      }
+    }
+  },
+  "secondary_pss": {
+    "sandbox_families_kib": 522720,
+    "lazyd_kib": 5238,
+    "total_kib": 527958
+  },
+  "pmem_mappings": {
+    "mapped_rss_kib": 53440,
+    "mapped_pss_kib": 6680,
+    "mapped_shared_clean_kib": 53440,
+    "mapped_private_dirty_kib": 0,
+    "mapping_identities": [
+      [
+        "08:20",
+        819620
+      ]
+    ]
+  },
+  "counters": {
+    "cloud_hypervisor": {
+      "baseline": {
+        "fetch_requests": 0,
+        "mmap_bytes": 0,
+        "padding_faults": 0,
+        "mmap_ranges": 0,
+        "data_faults": 0,
+        "fetch_request_bytes": 0,
+        "wakes": 0
+      },
+      "final": {
+        "fetch_requests": 192,
+        "mmap_bytes": 86179840,
+        "padding_faults": 0,
+        "mmap_ranges": 192,
+        "data_faults": 192,
+        "fetch_request_bytes": 786432,
+        "wakes": 192
+      },
+      "measured": {
+        "fetch_requests": 192,
+        "mmap_bytes": 86179840,
+        "padding_faults": 0,
+        "mmap_ranges": 192,
+        "data_faults": 192,
+        "fetch_request_bytes": 786432,
+        "wakes": 192
+      }
+    },
+    "vhost_root": {
+      "backend_count": 8,
+      "read_requests": 80,
+      "read_bytes": 303104,
+      "read_errors": 0,
+      "loaded_blocks": 64,
+      "total_blocks": 524288
+    },
+    "accelerator": {
+      "baseline": {
+        "describe_requests": 0,
+        "read_range_requests": 0,
+        "read_range_bytes": 0,
+        "read_range_max_bytes": 0
+      },
+      "final": {
+        "describe_requests": 8,
+        "read_range_requests": 24,
+        "read_range_bytes": 10772480,
+        "read_range_max_bytes": 897024
+      },
+      "measured": {
+        "describe_requests": 8,
+        "read_range_requests": 24,
+        "read_range_bytes": 10772480,
+        "read_range_max_bytes": 897024
+      }
+    },
+    "lazyd": {
+      "baseline": {
+        "fetch_requests": 0,
+        "fetch_request_bytes": 0,
+        "fetch_returned_range_bytes": 0,
+        "ready_hits": 0,
+        "ready_misses": 0,
+        "materialized_ranges": 0,
+        "materialized_bytes": 0,
+        "materialized_max_bytes": 0
+      },
+      "final": {
+        "fetch_requests": 192,
+        "fetch_request_bytes": 786432,
+        "fetch_returned_range_bytes": 86179840,
+        "ready_hits": 96,
+        "ready_misses": 96,
+        "materialized_ranges": 24,
+        "materialized_bytes": 10772480,
+        "materialized_max_bytes": 897024
+      },
+      "measured": {
+        "fetch_requests": 192,
+        "fetch_request_bytes": 786432,
+        "fetch_returned_range_bytes": 86179840,
+        "ready_hits": 96,
+        "ready_misses": 96,
+        "materialized_ranges": 24,
+        "materialized_bytes": 10772480,
+        "materialized_max_bytes": 897024
+      }
+    }
+  }
+}

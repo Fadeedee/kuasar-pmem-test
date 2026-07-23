@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="600.0" y="34" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="600">Application Ready by concurrent VM count</text>
+<text x="315.0" y="70" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600">Cold plaintext cache</text>
+<line x1="70.0" y1="445.0" x2="560.0" y2="445.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="60.0" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">0.0</text>
+<line x1="70.0" y1="375.0" x2="560.0" y2="375.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="60.0" y="379.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">0.9</text>
+<line x1="70.0" y1="305.0" x2="560.0" y2="305.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="60.0" y="309.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">1.8</text>
+<line x1="70.0" y1="235.0" x2="560.0" y2="235.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="60.0" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">2.7</text>
+<line x1="70.0" y1="165.0" x2="560.0" y2="165.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="60.0" y="169.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">3.6</text>
+<line x1="70.0" y1="95.0" x2="560.0" y2="95.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="60.0" y="99.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">4.5</text>
+<line x1="70.0" y1="95" x2="70.0" y2="445" stroke="#303842" stroke-width="1.2"/>
+<line x1="70.0" y1="445" x2="560.0" y2="445" stroke="#303842" stroke-width="1.2"/>
+<text x="70.0" y="467" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<text x="315.0" y="467" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<text x="560.0" y="467" text-anchor="middle" font-family="sans-serif" font-size="12">8</text>
+<line x1="70.0" y1="372.5" x2="70.0" y2="299.6" stroke="#3B6EA8" stroke-width="1.4"/>
+<circle cx="70.0" cy="372.5" r="4" fill="#3B6EA8"/>
+<line x1="315.0" y1="329.6" x2="315.0" y2="315.4" stroke="#3B6EA8" stroke-width="1.4"/>
+<circle cx="315.0" cy="329.6" r="4" fill="#3B6EA8"/>
+<line x1="560.0" y1="224.8" x2="560.0" y2="164.7" stroke="#3B6EA8" stroke-width="1.4"/>
+<circle cx="560.0" cy="224.8" r="4" fill="#3B6EA8"/>
+<path d="M 70.0 372.5 L 315.0 329.6 L 560.0 224.8" fill="none" stroke="#3B6EA8" stroke-width="2.4"/>
+<line x1="70.0" y1="382.3" x2="70.0" y2="375.6" stroke="#D0872B" stroke-width="1.4"/>
+<circle cx="70.0" cy="382.3" r="4" fill="#D0872B"/>
+<line x1="315.0" y1="368.8" x2="315.0" y2="348.0" stroke="#D0872B" stroke-width="1.4"/>
+<circle cx="315.0" cy="368.8" r="4" fill="#D0872B"/>
+<line x1="560.0" y1="339.0" x2="560.0" y2="320.4" stroke="#D0872B" stroke-width="1.4"/>
+<circle cx="560.0" cy="339.0" r="4" fill="#D0872B"/>
+<path d="M 70.0 382.3 L 315.0 368.8 L 560.0 339.0" fill="none" stroke="#D0872B" stroke-width="2.4"/>
+<line x1="70.0" y1="383.3" x2="70.0" y2="375.6" stroke="#2F855A" stroke-width="1.4"/>
+<circle cx="70.0" cy="383.3" r="4" fill="#2F855A"/>
+<line x1="315.0" y1="375.1" x2="315.0" y2="351.0" stroke="#2F855A" stroke-width="1.4"/>
+<circle cx="315.0" cy="375.1" r="4" fill="#2F855A"/>
+<line x1="560.0" y1="357.6" x2="560.0" y2="324.8" stroke="#2F855A" stroke-width="1.4"/>
+<circle cx="560.0" cy="357.6" r="4" fill="#2F855A"/>
+<path d="M 70.0 383.3 L 315.0 375.1 L 560.0 357.6" fill="none" stroke="#2F855A" stroke-width="2.4"/>
+<text x="315.0" y="493" text-anchor="middle" font-family="sans-serif" font-size="13">Concurrent VMs</text>
+<text x="885.0" y="70" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600">Warm plaintext cache</text>
+<line x1="640.0" y1="445.0" x2="1130.0" y2="445.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="630.0" y="449.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">0.0</text>
+<line x1="640.0" y1="375.0" x2="1130.0" y2="375.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="630.0" y="379.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">0.9</text>
+<line x1="640.0" y1="305.0" x2="1130.0" y2="305.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="630.0" y="309.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">1.8</text>
+<line x1="640.0" y1="235.0" x2="1130.0" y2="235.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="630.0" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">2.7</text>
+<line x1="640.0" y1="165.0" x2="1130.0" y2="165.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="630.0" y="169.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">3.6</text>
+<line x1="640.0" y1="95.0" x2="1130.0" y2="95.0" stroke="#d7dde5" stroke-width="1"/>
+<text x="630.0" y="99.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#45505d">4.5</text>
+<line x1="640.0" y1="95" x2="640.0" y2="445" stroke="#303842" stroke-width="1.2"/>
+<line x1="640.0" y1="445" x2="1130.0" y2="445" stroke="#303842" stroke-width="1.2"/>
+<text x="640.0" y="467" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<text x="885.0" y="467" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<text x="1130.0" y="467" text-anchor="middle" font-family="sans-serif" font-size="12">8</text>
+<line x1="640.0" y1="374.3" x2="640.0" y2="373.2" stroke="#3B6EA8" stroke-width="1.4"/>
+<circle cx="640.0" cy="374.3" r="4" fill="#3B6EA8"/>
+<line x1="885.0" y1="331.7" x2="885.0" y2="292.5" stroke="#3B6EA8" stroke-width="1.4"/>
+<circle cx="885.0" cy="331.7" r="4" fill="#3B6EA8"/>
+<line x1="1130.0" y1="213.2" x2="1130.0" y2="132.5" stroke="#3B6EA8" stroke-width="1.4"/>
+<circle cx="1130.0" cy="213.2" r="4" fill="#3B6EA8"/>
+<path d="M 640.0 374.3 L 885.0 331.7 L 1130.0 213.2" fill="none" stroke="#3B6EA8" stroke-width="2.4"/>
+<line x1="640.0" y1="409.5" x2="640.0" y2="405.1" stroke="#D0872B" stroke-width="1.4"/>
+<circle cx="640.0" cy="409.5" r="4" fill="#D0872B"/>
+<line x1="885.0" y1="391.5" x2="885.0" y2="383.8" stroke="#D0872B" stroke-width="1.4"/>
+<circle cx="885.0" cy="391.5" r="4" fill="#D0872B"/>
+<line x1="1130.0" y1="363.4" x2="1130.0" y2="320.5" stroke="#D0872B" stroke-width="1.4"/>
+<circle cx="1130.0" cy="363.4" r="4" fill="#D0872B"/>
+<path d="M 640.0 409.5 L 885.0 391.5 L 1130.0 363.4" fill="none" stroke="#D0872B" stroke-width="2.4"/>
+<line x1="640.0" y1="410.2" x2="640.0" y2="405.3" stroke="#2F855A" stroke-width="1.4"/>
+<circle cx="640.0" cy="410.2" r="4" fill="#2F855A"/>
+<line x1="885.0" y1="395.8" x2="885.0" y2="393.8" stroke="#2F855A" stroke-width="1.4"/>
+<circle cx="885.0" cy="395.8" r="4" fill="#2F855A"/>
+<line x1="1130.0" y1="368.1" x2="1130.0" y2="334.2" stroke="#2F855A" stroke-width="1.4"/>
+<circle cx="1130.0" cy="368.1" r="4" fill="#2F855A"/>
+<path d="M 640.0 410.2 L 885.0 395.8 L 1130.0 368.1" fill="none" stroke="#2F855A" stroke-width="2.4"/>
+<text x="885.0" y="493" text-anchor="middle" font-family="sans-serif" font-size="13">Concurrent VMs</text>
+<text x="18" y="270.0" text-anchor="middle" transform="rotate(-90 18 270.0)" font-family="sans-serif" font-size="13">Seconds (median with p95 whisker)</text>
+<line x1="365" y1="510" x2="389" y2="510" stroke="#3B6EA8" stroke-width="3"/>
+<text x="396" y="514" font-family="sans-serif" font-size="12">Current BLK</text>
+<line x1="565" y1="510" x2="589" y2="510" stroke="#D0872B" stroke-width="3"/>
+<text x="596" y="514" font-family="sans-serif" font-size="12">BLK + shared cache</text>
+<line x1="765" y1="510" x2="789" y2="510" stroke="#2F855A" stroke-width="3"/>
+<text x="796" y="514" font-family="sans-serif" font-size="12">Lazy PMEM</text>
+</svg>

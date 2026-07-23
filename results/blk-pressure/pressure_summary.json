@@ -1,0 +1,68 @@
+[
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 2496,
+    "mode": "vhost-user-blk-shared-cache",
+    "pass_rate_percent": 100.0,
+    "passes": 3,
+    "runtime_failures": 0,
+    "samples": 3,
+    "successful_memory_peak_mib_p50": 2496.0
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 3,
+    "memory_max_mib": 2496,
+    "mode": "vhost-user-blk-shared-cache",
+    "pass_rate_percent": 0.0,
+    "passes": 0,
+    "runtime_failures": 0,
+    "samples": 3,
+    "successful_memory_peak_mib_p50": null
+  },
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 2528,
+    "mode": "vhost-user-blk-shared-cache",
+    "pass_rate_percent": 100.0,
+    "passes": 3,
+    "runtime_failures": 0,
+    "samples": 3,
+    "successful_memory_peak_mib_p50": 2503.08984375
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 2528,
+    "mode": "vhost-user-blk-shared-cache",
+    "pass_rate_percent": 100.0,
+    "passes": 3,
+    "runtime_failures": 0,
+    "samples": 3,
+    "successful_memory_peak_mib_p50": 2521.4765625
+  },
+  {
+    "cache_backing": "file",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 2560,
+    "mode": "vhost-user-blk-shared-cache",
+    "pass_rate_percent": 100.0,
+    "passes": 3,
+    "runtime_failures": 0,
+    "samples": 3,
+    "successful_memory_peak_mib_p50": 2515.7265625
+  },
+  {
+    "cache_backing": "memfd",
+    "memory_limit_failures": 0,
+    "memory_max_mib": 2560,
+    "mode": "vhost-user-blk-shared-cache",
+    "pass_rate_percent": 100.0,
+    "passes": 3,
+    "runtime_failures": 0,
+    "samples": 3,
+    "successful_memory_peak_mib_p50": 2518.5703125
+  }
+]

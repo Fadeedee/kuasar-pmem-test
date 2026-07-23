@@ -1,0 +1,20 @@
+{
+  "cache_backing": "memfd",
+  "classification": "memory-limit",
+  "execution_order": 1,
+  "log": "/root/virtiolazyd/benchmark-results/20260723-blk-backing-pressure-final/worker-logs/r02-m2496-sm.log",
+  "memory_max_mib": 2496,
+  "mode": "vhost-user-blk-shared-cache",
+  "returncode": 1,
+  "round": 2,
+  "systemd": {
+    "CPUUsageNSec": "82535816000",
+    "ExecMainCode": "2",
+    "ExecMainStatus": "15",
+    "MemoryPeak": "2617245696",
+    "Result": "oom-kill"
+  },
+  "unit": "klp-q-r02-m2496-sm",
+  "vm_count": 8,
+  "worker_result_path": null
+}

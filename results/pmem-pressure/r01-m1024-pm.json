@@ -1,0 +1,20 @@
+{
+  "cache_backing": "memfd",
+  "classification": "pass",
+  "execution_order": 2,
+  "log": "/root/virtiolazyd/benchmark-results/20260723-pmem-backing-pressure-final/worker-logs/r01-m1024-pm.log",
+  "memory_max_mib": 1024,
+  "mode": "lazy-pmem",
+  "returncode": 0,
+  "round": 1,
+  "systemd": {
+    "CPUUsageNSec": "[not set]",
+    "ExecMainCode": "0",
+    "ExecMainStatus": "0",
+    "MemoryPeak": "[not set]",
+    "Result": "success"
+  },
+  "unit": "klp-q-r01-m1024-pm",
+  "vm_count": 8,
+  "worker_result_path": "/root/virtiolazyd/benchmark-results/20260723-pmem-backing-pressure-final/worker-results/r01-m1024-pm.json"
+}

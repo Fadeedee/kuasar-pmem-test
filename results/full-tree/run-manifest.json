@@ -1,0 +1,109 @@
+{
+  "contract": {
+    "binary_artifacts": {
+      "cloud-hypervisor": {
+        "bytes": 4172760,
+        "sha256": "9dd343740f0350865a9dc94f188ad91f29cdf1b8d02f7a85a2a788b3d895d0bb"
+      },
+      "lazyd": {
+        "bytes": 7526296,
+        "sha256": "9fb580d2ad09a43fdb28540a2eb3b9adcaf1737f611111de40c6d95ed165c468"
+      },
+      "manifest-ctl": {
+        "bytes": 16539149,
+        "sha256": "6560ce1f944e520a5597bc77a7edf85cd2f0b785ed24800d891da9173cc49401"
+      },
+      "read-tree": {
+        "bytes": 1700024,
+        "sha256": "d10d0bd052b9e603eb904e072861c82d23ce16168601115a5971a39809a44c2a"
+      },
+      "sandbox-ctl": {
+        "bytes": 20141130,
+        "sha256": "687512a815b7c785db035336f1e04bc2dc94b70deedd4315bb80fdae045ab209"
+      },
+      "sandbox-init": {
+        "bytes": 4692803,
+        "sha256": "fb0546739b87a3538f2f2972ee5ccc9ee5940b41f38c5225d8bb2dc2968e4007"
+      },
+      "sandbox-runtime.erofs": {
+        "bytes": 44040192,
+        "sha256": "baafd0d73b4d06a0f222dcbb76a04393c52430419d0807a7e52da512758d497d"
+      },
+      "store-ctl": {
+        "bytes": 29772512,
+        "sha256": "ba3e99a74925559de1c838a5da256aac329ea75c9c470deb7fcdf7cab0cec39f"
+      },
+      "vmlinux": {
+        "bytes": 22634464,
+        "sha256": "5dea5a94938a39d501d8ac90090f724d990620ee97536644ce7ac08db0e463a0"
+      }
+    },
+    "cache_backings": [
+      "file",
+      "memfd"
+    ],
+    "capture_order": [
+      "worker_baseline",
+      "prelaunch",
+      "app_ready",
+      "operation_complete",
+      "held"
+    ],
+    "host": {
+      "cgroup_v2": true,
+      "cpu_count": 16,
+      "kernel": "7.1.0-rc1-microsoft-standard-WSL2",
+      "kvm": true,
+      "machine": "x86_64",
+      "platform": "Linux-7.1.0-rc1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+    },
+    "images_tsv_sha256": "d55bc407bd1caa7ee69816b3c879e12be89826e8ec306a21a3760c2ebeeeaec0",
+    "materialization_max_bytes": 1048576,
+    "modes": [
+      "vhost-user-blk-shared-cache",
+      "lazy-pmem"
+    ],
+    "repositories": {
+      "accelerator": {
+        "head": "aaa204a4655fd75ad3f30a8d94abb21d41a20993",
+        "status": [],
+        "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "cloud-hypervisor": {
+        "head": "eba9f24e2f229ed7e3710ada3052f7f551a5de5f",
+        "status": [],
+        "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "lazyd": {
+        "head": "fb2abe78dfddc346f0e225a6866c5e8be5d84a4a",
+        "status": [],
+        "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "sandboxer": {
+        "head": "adcc9ed40e4acaec43aac471214610f1d29162fd",
+        "status": [],
+        "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "rounds": 10,
+    "schema_version": 1,
+    "script_sha256": {
+      "benchmark_metrics.py": "0477c9ccf611d6d3d9791831f6637b83f01452bb0e7d431845f83386a7666488",
+      "benchmark_workloads.py": "296c0b502562a1849205a712e1a66d1ed5a7df242365dd80d744e409fa1d5e2e",
+      "run_benchmark_worker.py": "02478a458307bdc5edee159fdf0a6eab5f192e34b835ab589461ae9df1564e42",
+      "run_cache_backing_evidence.py": "e769960f38ef25b6150433f4d85e6e5ec641e3b1182b19670bd0adeb30f5fb9d",
+      "run_full_tree_backing_evidence.py": "0eaa1b833ab012facf1d6989c0a1ee2ee6f08a5f57861374e668ed6e0b2789b4",
+      "run_reuse_benchmark.py": "ae7de2a01653c5e7647f8314c43978d2eb2d91c11ecf35bbb95ed1bf5fa9775b"
+    },
+    "source_states": [
+      "plaintext-warm"
+    ],
+    "vm_counts": [
+      1,
+      4,
+      8
+    ],
+    "workload": "full-tree-scan"
+  },
+  "created_utc": "2026-07-23T05:36:56.997634+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "contract": {
+    "binary_sha256": {
+      "cloud-hypervisor": "9dd343740f0350865a9dc94f188ad91f29cdf1b8d02f7a85a2a788b3d895d0bb",
+      "lazyd": "9fb580d2ad09a43fdb28540a2eb3b9adcaf1737f611111de40c6d95ed165c468",
+      "manifest-ctl": "6560ce1f944e520a5597bc77a7edf85cd2f0b785ed24800d891da9173cc49401",
+      "read-tree": "d10d0bd052b9e603eb904e072861c82d23ce16168601115a5971a39809a44c2a",
+      "sandbox-ctl": "687512a815b7c785db035336f1e04bc2dc94b70deedd4315bb80fdae045ab209",
+      "sandbox-init": "fb0546739b87a3538f2f2972ee5ccc9ee5940b41f38c5225d8bb2dc2968e4007",
+      "sandbox-runtime.erofs": "baafd0d73b4d06a0f222dcbb76a04393c52430419d0807a7e52da512758d497d",
+      "store-ctl": "ba3e99a74925559de1c838a5da256aac329ea75c9c470deb7fcdf7cab0cec39f",
+      "vmlinux": "5dea5a94938a39d501d8ac90090f724d990620ee97536644ce7ac08db0e463a0"
+    },
+    "cache_backings": [
+      "file",
+      "memfd"
+    ],
+    "cells": [
+      "pf",
+      "pm"
+    ],
+    "memory_max_mib": [
+      944,
+      960,
+      976,
+      992,
+      1024
+    ],
+    "memory_swap_max_bytes": 0,
+    "modes": [
+      "vhost-user-blk-shared-cache",
+      "lazy-pmem"
+    ],
+    "rounds": 5,
+    "schema_version": 1,
+    "vm_count": 8,
+    "worker_sha256": "02478a458307bdc5edee159fdf0a6eab5f192e34b835ab589461ae9df1564e42",
+    "workload": "full-tree-scan"
+  },
+  "created_utc": "2026-07-23T07:12:55.535549+00:00"
+}

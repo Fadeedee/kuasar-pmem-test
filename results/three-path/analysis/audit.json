@@ -1,0 +1,28 @@
+{
+  "sample_count": 180,
+  "cell_count": 18,
+  "rounds_per_cell": 10,
+  "response_sha256": "fb47468a2cd3953c7131431991afcc6a2703f14640520102eea0a685a7e8d6de",
+  "response_bytes": 615,
+  "cold_materialized_bytes_by_mode": {
+    "vhost-user-blk-shared-cache": 11583488,
+    "lazy-pmem": 10772480
+  },
+  "cold_materialized_max_bytes_by_mode": {
+    "vhost-user-blk-shared-cache": 897024,
+    "lazy-pmem": 897024
+  },
+  "materialization_max_bytes": 1048576,
+  "unique_cgroups": 180,
+  "invariants": {
+    "complete_paired_grid": true,
+    "workload_output_identical": true,
+    "vhost_read_errors_zero": true,
+    "warm_remote_fetch_bytes_zero": true,
+    "materialization_window_bounded": true,
+    "transport_working_sets_accounted_separately": true,
+    "pmem_fault_fetch_mmap_wake_balanced": true,
+    "pmem_single_cache_identity": true,
+    "pmem_private_dirty_zero": true
+  }
+}

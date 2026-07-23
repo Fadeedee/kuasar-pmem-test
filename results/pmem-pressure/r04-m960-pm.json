@@ -1,0 +1,20 @@
+{
+  "cache_backing": "memfd",
+  "classification": "memory-limit",
+  "execution_order": 2,
+  "log": "/root/virtiolazyd/benchmark-results/20260723-pmem-backing-pressure-final/worker-logs/r04-m960-pm.log",
+  "memory_max_mib": 960,
+  "mode": "lazy-pmem",
+  "returncode": 1,
+  "round": 4,
+  "systemd": {
+    "CPUUsageNSec": "20027082000",
+    "ExecMainCode": "2",
+    "ExecMainStatus": "15",
+    "MemoryPeak": "1006637056",
+    "Result": "oom-kill"
+  },
+  "unit": "klp-q-r04-m960-pm",
+  "vm_count": 8,
+  "worker_result_path": null
+}
